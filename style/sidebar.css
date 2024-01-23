@@ -152,8 +152,8 @@
 
 .playlist__content .subtitle {
     padding: 10px 0 0;
-    font-weight: 500;
-    font-size: 0.8rem;
+    font-weight: bold;
+    font-size: 0.7rem;
 }
 
 .playlist__content .playlist__button {
