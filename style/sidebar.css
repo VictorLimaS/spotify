@@ -1,0 +1,208 @@
+.bar__essential {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 12px;
+    width: 300px;
+    background-color: #000000;
+}
+
+.bar__essential .logo {
+    background: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.bar__essential .logo img {
+    width: 80px;
+}
+
+.bar__navigation {
+    background-color: #121212;
+    border-radius: 8px;
+}
+
+.bar__essential nav ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+}
+
+.bar__essential nav ul li {
+    padding: 10px 0;
+}
+
+.bar__essential nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.bar__essential nav ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.bar__essential nav ul li a:hover {
+    color: #ffffff;
+}
+
+.bookstore {
+    background-color: #121212;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    min-block-size: 40px;
+    padding: 4px 8px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.bookstore .bookstore__button {
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.bookstore .bookstore__button:hover {
+    color: #ffffff;
+    transition: 0.7s;
+}
+
+.bookstore .bookstore__button .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.bookstore__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookstore .bookstore__content .fa-plus {
+    margin: 24px 10px;
+}
+
+.bookstore .bookstore__content .fa-plus:hover {
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+/*.bookstore .bookstore__content .fa-plus:hover {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #131313;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.7s;
+}*/
+
+.section-playlist {
+    background-color: #242424;
+    align-items: flex-start;
+    border-radius: 8px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    min-block-size: 40px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 16px 20px;
+}
+
+.section-playlist .playlist__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist__content .text {
+    padding-bottom: 14px;
+    color: #fff;
+}
+
+.playlist__content .title {
+    font-weight: 700;
+}
+
+.playlist__content .subtitle {
+    padding: 10px 0 0;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.playlist__content .playlist__button {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 9999px;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    border: 0;
+    width: 113px;
+    justify-content: center;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.playlist__content .playlist__button:hover {
+    transform: scale(1.04);
+}
+
+.bar__essential .cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.bar__essential .cookies a:hover {
+    text-decoration: underline;
+}
+
+.langs .langs__button {
+    background-color: transparent;
+    border-radius: 9999px;
+    border: 1px solid #878787;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    padding: 8px;
+    width: 170px;
+    margin: 8px;
+    font-weight: bold;
+}
+
+.langs .langs__button:hover {
+    transform: scale(1.04);
+    border: 1px solid #fff;
+}
