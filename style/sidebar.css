@@ -75,7 +75,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    padding: 20px 10px;
+    padding: 10px 10px;
     display: flex;
     cursor: pointer;
 }
@@ -93,23 +93,28 @@
 }
 
 .bookstore__content {
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
 .bookstore .bookstore__content .fa-plus {
-    margin: 24px 10px;
+    margin: 0 10px;
+}
+
+.bookstore .fa-plus {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .bookstore .bookstore__content .fa-plus:hover {
     color: #ffffff;
-    cursor: pointer;
-    transition: 0.7s;
-}
-
-/*.bookstore .bookstore__content .fa-plus:hover {
-    color: #ffffff;
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 32px;
@@ -118,8 +123,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.7s;
-}*/
+}
 
 .section-playlist {
     background-color: #242424;
@@ -151,7 +155,7 @@
 }
 
 .playlist__content .subtitle {
-    padding: 10px 0 0;
+    padding: 1px 0 0;
     font-weight: bold;
     font-size: 0.7rem;
 }

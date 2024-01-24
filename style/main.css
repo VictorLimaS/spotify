@@ -6,11 +6,13 @@
 }
 
 .header__navigation {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px;
     margin: 10px;
+    width: 76%;
     border-radius: 8px;
     background-color: #121212;
 }
