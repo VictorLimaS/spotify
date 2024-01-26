@@ -1,0 +1,14 @@
+{
+    "artists": [
+        {"id": 1, "name": "Justin Bieber", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab676161000051748ae7f2aaa9817a704a87ea36"},
+        {"id": 2, "name": "NXzero", "genre": "Rock", "urlImg": "https://i.scdn.co/image/ab67616100005174d5cbf057a26d4642df9efc0b"},
+        {"id": 3, "name": "Lagum", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab67616100005174afe376bf30a18f82dc0ca5d9"},
+        {"id": 4, "name": "Billie Ellish", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab67616100005174d8b9980db67272cb4d2c3daf"},
+        {"id": 5, "name": "Cabelinho", "genre": "Rap", "urlImg": "https://i.scdn.co/image/ab676161000051748ae2f04c03007f281f7c13ca"},
+        {"id": 6, "name": "Ferrugem", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab67616100005174444f2602bb6e0aa1c62eb553"},
+        {"id": 7, "name": "Zayn", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab67616100005174056f821a5186892979410deb"},
+        {"id": 8, "name": "Roberta Campos", "genre": "MPB", "urlImg": "https://i.scdn.co/image/ab67616100005174aeaf89a8c558ad85d13ea9bd"},
+        {"id": 9, "name": "Olivia Rodrigo", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab67616100005174e03a98785f3658f0b6461ec4"},
+        {"id": 10, "name": "Imagine Dragons", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab67616100005174920dc1f617550de8388f368e"}
+    ]
+}
