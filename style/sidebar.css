@@ -4,6 +4,7 @@
     left: 0;
     width: 370px;
     height: 100%;
+    margin: 10px;
 }
 
 .bar__essential .logo {
@@ -59,7 +60,7 @@
     color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;
-    margin-top: 25px;
+    margin-top: 10px;
     flex-direction: column;
 }
 
