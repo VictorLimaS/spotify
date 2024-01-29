@@ -1,0 +1,13 @@
+#hamburguer {
+    display: none;
+}
+
+#hamburguer span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
