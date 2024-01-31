@@ -20,7 +20,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 
 
-- [Da uma olhada ai](https://spotify-imers-o-alura.vercel.app/)
+- [Da uma olhada ai](https://spotify-seven-rho.vercel.app/)
 
 
 
