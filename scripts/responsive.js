@@ -1,5 +1,5 @@
-const hamburguer = document.querySelector("#hamburguer")
-const navmenu = document.querySelector("#sidebar")
+const hamburguer = document.querySelector("")
+const navmenu = document.querySelector("")
 
 hamburguer.addEventListener("click", () => {
   hamburguer.classList.toggle("active")
