@@ -8,6 +8,11 @@
 body {
     background-color: black;
     font-family: "DM Sans", sans-serif;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -39,9 +44,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    margin: 10px;
-    border-radius: 8px;
-    background-color: #121212;
+    margin: 10px 10px 0 10px;
+    border-radius: 8px 8px 0 0;
+    background-color: #090707;
 }
 
 .header-search {
@@ -161,7 +166,7 @@ header {
     background-color: #121212;
     margin-top: 15px;
     border-radius: 8px;
-    height: 67%;
+    height: 68%;
     padding: 0 10px;
 }
 
@@ -213,8 +218,12 @@ header {
 }
 
 .playlist-texts h1 {
-    font-size: 20px;
+    font-size: 13px;
     margin-bottom: 10px;
+}
+
+.playlist-texts p {
+    font-size: 10px;
 }
 
 .playlist-container button {
@@ -236,7 +245,7 @@ header {
 .cookies {
     display: flex;
     height: 20%;
-    gap: 10px;
+    gap: 13px;
     padding: 22px 20px;
     flex-wrap: wrap;
 }
@@ -248,11 +257,16 @@ header {
     font-size: 10px;
 }
 
+.cookies a:hover {
+    color: #fff;
+    border-bottom: 1px #fff solid;
+}
+
 .language-btn {
     background-color: transparent;
     border: 1px solid #878787;
     border-radius: 20px;
-    padding: 3px 15px;
+    padding: 3px 9px;
     margin: 55px 0 0 12px;
 }
 
@@ -273,13 +287,13 @@ header {
 /*Estilo Main*/
 
 main {
+    overflow-y: scroll;
     background-color: #121212;
-    height: calc(100vh - 116px);
+    height: calc(100vh - 183px);
     width: calc(100vw - 332px);
-    margin-left: 310px;
+    margin-left: 320px;
     margin-right: 56px;
-    border-radius: 8px;
-    overflow-y: hidden;
+    border-radius: 0 0 8px 8px;
 }
 
 .welcome-main {
@@ -301,7 +315,7 @@ main {
 }
 
 .welcome-main h2 {
-    margin: 30px;
+    margin: 50px 30px 30px 30px;
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -309,7 +323,6 @@ main {
 
 /* Section cards*/
 .playlist-artists-container {
-    overflow-y: scroll;
     height: 100%;
     width: 100%;
 }
@@ -323,6 +336,7 @@ main {
 }
 
 #cards-container div {
+    position: relative;
     width: 220px;
     height: 200px;
     overflow: hidden;
@@ -335,80 +349,283 @@ main {
     text-decoration: none;
 }
 
+#cards-container img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 120px;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
 #cards-container .card1 {
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: rgb(0, 100, 80);
 }
 
 #cards-container .card2 {
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: rgb(132, 0, 231);
 }
 
 #cards-container .card3 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(30, 50, 100);
 }
 
 #cards-container .card4 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(140, 25, 50);
 }
 
 #cards-container .card5 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(232, 17, 91);
 }
 
 #cards-container .card6 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(83, 122, 161);
 }
 
 #cards-container .card7 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(142, 102, 172);
 }
 
 #cards-container .card8 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(20, 138, 8);
 }
 
 #cards-container .card9 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(30, 50, 100);
 }
 
 #cards-container .card10 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(233, 20, 41);
 }
 
 #cards-container .card11 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(80, 55, 80);
 }
 
 #cards-container .card12 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(216, 64, 0);
 }
 
 #cards-container .card13 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(186, 93, 7);
 }
 
 #cards-container .card14 {
     background-repeat: no-repeat;
     background-size: contain;
+    background: rgb(0, 30, 80);
 }
 
 #cards-container .card15 {
     background-repeat: no-repeat;
     background-size: contain;
-    margin-bottom: 350px;
+    background: rgb(193, 40, 101);
+}
+
+#cards-container .card16 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 80px;
+    background: rgb(60, 30, 80);
+}
+
+/* Artistas*/
+
+.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+}
+
+.artist-card {
+    background: #181818;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 130px;
+}
+
+.artist-card:hover {
+    background-color: #252525;
+}
+
+.card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.artist-img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
+}
+
+.card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 15px;
+    font-weight: 700;
+    padding-block-end: 8px;
+}
+
+.artist-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.play {
+    position: relative;
+}
+
+.play .playicon {
+    position: absolute;
+    right: 1px;
+    top: 50px;
+    padding: 5px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 30px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .playicon {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+.play .playicon:hover {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#result-artist {
+    padding: 20px 40px 150px 40px;
+}
+
+/*Footer main*/
+.footer-cards {
+    padding-bottom: 60px;
+    margin-bottom: 100px;
+}
+
+.footer-cards .information {
+    display: flex;
+    height: 100px;
+    margin: 0 0 100px 50px;
+    gap: 100px;
+    text-align: left;
+
+}
+
+.footer-cards .information p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-cards .information a {
+    display: block;
+    color: #7e7e7e;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-cards .information a:hover {
+    color: #fff;
+}
+
+.icones {
+    display: flex;
+    font-size: 30px;
+    margin-left: 200px;
+}
+
+.icones .iconn {
+    color: #7e7e7e;
+    cursor: pointer;
+    width: 45px;
+    gap: 80px;
+}
+
+.icones .iconn:hover {
+    color: #fff;
+}
+
+.direct hr {
+    width: 90%;
+    margin-left: 5%;
+    margin-block-start: 0px 
+}
+
+.direct p {
+    margin: 30px 0 0 30px;
+    color: #7e7e7e;
+    font-weight: bold;
 }
 
 /*Footer style*/
@@ -421,9 +638,8 @@ footer {
     margin: 10px;
     padding: 0 10px;
     width: 99%;
-    height: 80px;
-    border-radius: 10px;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    height: 70px;
+    background-image: linear-gradient(60deg, #30ff3b 0%, #232a2a 100%);
 }
 
 footer h1 {
