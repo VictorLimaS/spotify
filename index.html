@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/main.css" />
-    <title>Spotify | Imersão Alura</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>Spotify</title>
 </head>
 
 <body>
@@ -92,47 +93,112 @@
     </div>
     <main>
         <div class="welcome-main">
-            <h1 id="greetings"></h1>
-            <p id="date"></p>
-            <p id="hour"></p>
             <h2>Navegar por todas seções</h2>
         </div>
         <section class="playlist-artists-container">
             <div id="cards-container">
-                <a href=""><div class="card1"><img src="assets/playlist/aniversario.png" alt=""></div></a>
-                <a href=""><div class="card2"><img src="assets/playlist/brasil.png" alt=""></div></a>
-                <a href=""><div class="card3"><img src="assets/playlist/revoada.png" alt=""></div></a>
-                <a href=""><div class="card4"><img src="assets/playlist/disney.png" alt=""></div></a>
-                <a href=""><div class="card5"><img src="assets/playlist/domingo.png" alt=""></div></a>
-                <a href=""><div class="card6"><img src="assets/playlist/drip.png" alt=""></div></a>
-                <a href=""><div class="card7"><img src="assets/playlist/funk.png" alt=""></div></a>
-                <a href=""><div class="card8"><img src="assets/playlist/hiphop.png" alt=""></div></a>
-                <a href=""><div class="card9"><img src="assets/playlist/jogos.png" alt=""></div></a>
-                <a href=""><div class="card10"><img src="assets/playlist/mpb.png" alt=""></div></a>
-                <a href=""><div class="card11"><img src="assets/playlist/novidades.png" alt=""></div></a>
-                <a href=""><div class="card12"><img src="assets/playlist/pagode.png" alt=""></div></a>
-                <a href=""><div class="card13"><img src="assets/playlist/podcast.png" alt=""></div></a>
-                <a href=""><div class="card14"><img src="assets/playlist/pop.png" alt=""></div></a>
-                <a href=""><div class="card15"><img src="assets/playlist/popbrasil.png" alt=""></div></a>
+                <a href="">
+                    <div class=" cards card1"><img src="assets/playlist/aniversario.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card2"><img src="assets/playlist/brasil.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card3"><img src="assets/playlist/revoada.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card4"><img src="assets/playlist/disney.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card5"><img src="assets/playlist/domingo.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card6"><img src="assets/playlist/drip.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card7"><img src="assets/playlist/funk.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card8"><img src="assets/playlist/hiphop.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card9"><img src="assets/playlist/jogos.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card10"><img src="assets/playlist/mpb.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card11"><img src="assets/playlist/novidades.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card12"><img src="assets/playlist/pagode.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card13"><img src="assets/playlist/podcast.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card14"><img src="assets/playlist/pop.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card15"><img src="assets/playlist/popbrasil.png" alt=""></div>
+                </a>
+                <a href="">
+                    <div class="card16"><img src="assets/playlist/rock.png" alt=""></div>
+                </a>
             </div>
             <div id="result-artist" class="hidden">
                 <div class="grid-container">
-                  <div class="artist-card" id="">
-                    <div class="card-img">
-                      <img id="artist-img" class="artist-img" alt="" />
+                    <div class="artist-card" id="">
+                        <div class="card-img">
+                            <img id="artist-img" class="artist-img" alt="" />
+                        </div>
+                        <div class="play">
+                            <ion-icon class="playicon" name="play-outline"></ion-icon>
+                        </div>
+                        <div class="card-text">
+                            <a title="Foo Fighters" class="vst" href=""></a>
+                            <span class="artist-name" id="artist-name"></span>
+                            <span class="artist-categorie">Artista</span>
+                        </div>
                     </div>
-                    <div class="play">
-                      <ion-icon class="playicon" name="play-outline"></ion-icon>
-                    </div>
-                    <div class="card-text">
-                      <a title="Foo Fighters" class="vst" href=""></a>
-                      <span class="artist-name" id="artist-name"></span>
-                      <span class="artist-categorie">Artista</span>
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </div>
+            <div class="footer-cards">
+                <div class="information">
+                    <div>
+                        <p>Empresa</p>
+                        <a href="">Sobre</a>
+                        <a href="">Empregos</a>
+                        <a href="">For the Record</a>
+                    </div>
+                    <div>
+                        <p>Comunidades</p>
+                        <a href="">Para Artistas</a>
+                        <a href="">Desenvolvedores</a>
+                        <a href="">Publicidade</a>
+                        <a href="">Investidores</a>
+                        <a href="">Fornecedores</a>
+                    </div>
+                    <div>
+                        <p>Links úteis</p>
+                        <a href="">Suporte</a>
+                        <a href="">Aplicativo móveis grátis</a>
+                    </div>
+                    <div class="icones">
+                        <span><ion-icon name="logo-instagram" class="iconn"></ion-icon></span>
+                        <span><ion-icon name="logo-twitter" class="iconn"></ion-icon></span>
+                        <span><ion-icon name="logo-facebook" class="iconn"></ion-icon></span>
+                    </div>
+                </div>
+                <div class="direct">
+                    <div>
+                        <hr>
+                    </div>
+                    <p><ion-icon name="heart-outline"></ion-icon> Victor Lima </p>
+                </div>
+            </div>
         </section>
+
     </main>
     <footer>
         <div class="texts-footer">
@@ -146,6 +212,7 @@
             <a href="">Inscreva-se Grátis</a>
         </button>
     </footer>
+    <script src="scripts/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
