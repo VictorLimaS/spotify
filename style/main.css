@@ -17,19 +17,15 @@ body {
 
 ::-webkit-scrollbar-track {
     background-color: #121212;
-    /* Cor da trilha */
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #b3b3b3;
-    /* Cor da "thumb" */
     border-radius: 8px;
-    /* Borda arredondada da "thumb" */
 }
 
 ::-webkit-scrollbar {
     width: 12px;
-    /* Largura do scrollbar */
 }
 
 /*Header Style*/
@@ -287,19 +283,12 @@ header {
 /*Estilo Main*/
 
 main {
-    overflow-y: scroll;
     background-color: #121212;
     height: calc(100vh - 183px);
     width: calc(100vw - 332px);
     margin-left: 320px;
     margin-right: 56px;
     border-radius: 0 0 8px 8px;
-}
-
-.welcome-main {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 .welcome-main h1 {
@@ -323,6 +312,7 @@ main {
 
 /* Section cards*/
 .playlist-artists-container {
+    overflow-y: scroll;
     height: 100%;
     width: 100%;
 }
@@ -568,15 +558,16 @@ main {
 
 /*Footer main*/
 .footer-cards {
-    padding-bottom: 60px;
-    margin-bottom: 100px;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
 }
 
 .footer-cards .information {
     display: flex;
-    height: 100px;
-    margin: 0 0 100px 50px;
-    gap: 100px;
+    height: 200px;
+    margin: 0 0 0px 50px;
+    gap: 50px;
     text-align: left;
 
 }
@@ -600,16 +591,14 @@ main {
 }
 
 .icones {
-    display: flex;
+    margin: 0 100px 0 0;
     font-size: 30px;
-    margin-left: 200px;
+    justify-content: end;
 }
 
 .icones .iconn {
     color: #7e7e7e;
     cursor: pointer;
-    width: 45px;
-    gap: 80px;
 }
 
 .icones .iconn:hover {
@@ -623,7 +612,7 @@ main {
 }
 
 .direct p {
-    margin: 30px 0 0 30px;
+    padding: 20px 0 80px 40px;
     color: #7e7e7e;
     font-weight: bold;
 }
