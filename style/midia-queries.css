@@ -58,6 +58,7 @@
         height: auto;
         width: 90px;
     }
+
     footer p {
         font-size: 11px;
     }
@@ -77,19 +78,57 @@
         display: none;
     }
 
+    .header-arrows {
+        display: none;
+    }
+
     header {
         margin-left: 0px;
         width: 100%;
     }
 
     main {
-        margin-left: 0px;
-        width: 100%;
+        margin-left: 10px;
+        width: 98%;
+    }
+
+    #hamburguer {
+        display: block;
+    }
+
+    #hamburguer.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburguer.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #hamburguer.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #sidebar.active {
+        display: block;
+        margin-top: 70px;
+        border-radius: 0px;
+        overflow-y: scroll;
     }
 }
 
 @media (max-width: 684px) {
     footer p {
         display: none;
+    }
+}
+
+@media (max-width: 684px) {
+    footer h1 {
+        font-size: 15px;
+    }
+
+    #cards-container div {
+        width: 100px;
+        height: 80px;
     }
 }
