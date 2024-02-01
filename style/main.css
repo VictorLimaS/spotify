@@ -69,8 +69,6 @@ header {
     color: white;
 }
 
-
-
 .header-search img {
     width: 16px;
     margin-left: 10px;
@@ -78,7 +76,7 @@ header {
 
 .header-btn {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .subscribe {
@@ -114,6 +112,20 @@ header {
 .login a {
     font-weight: 600;
     color: black;
+}
+
+#hamburguer {
+    display: none;
+}
+
+#hamburguer span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Estilização do sidebar */
@@ -458,22 +470,18 @@ main {
 }
 
 .grid-container {
-    grid-gap: var(--grid-gap);
-    display: grid;
-    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
-    min-width: var(--min-container-width);
+    margin-left: 48px;
+    width: 220px;
+    height: 200px;
 }
 
 .artist-card {
     background: #181818;
     border-radius: 8px;
-    -ms-flex: 1;
-    flex: 1;
-    isolation: isolate;
     padding: 16px;
     position: relative;
     transition: background-color 0.3s ease;
-    width: 130px;
+    width: 100%;
 }
 
 .artist-card:hover {
@@ -488,12 +496,12 @@ main {
 }
 
 .artist-img {
+    height: 100%;
     left: 0;
     position: absolute;
     top: 0;
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
+    width: 100%;
+    border-radius: 50%; 
 }
 
 .card-text {
@@ -532,7 +540,7 @@ main {
 
 .play .playicon {
     position: absolute;
-    right: 1px;
+    right: 10px;
     top: 50px;
     padding: 5px;
     background-color: #1db954;
@@ -544,11 +552,11 @@ main {
 
 .artist-card:hover .play .playicon {
     opacity: 1;
-    transform: translateY(-40px);
+    transform: translateY(-20px);
 }
 
 .play .playicon:hover {
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -608,7 +616,7 @@ main {
 .direct hr {
     width: 90%;
     margin-left: 5%;
-    margin-block-start: 0px 
+    margin-block-start: 0px
 }
 
 .direct p {
