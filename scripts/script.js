@@ -1,13 +1,16 @@
+// Obter elementos do DOM
+const searchInput = document.getElementById("search-input");
+const resultsArtist = document.getElementById("result-artist");
+const resultPlaylist = document.getElementById("cards-container");
+
 // Função para fazer a requisição da API
 function requestApi(termoDeBusca) {
   // URL do endpoint da API
   const url = `https://api-spotify-eta.vercel.app/artists?name_like=${termoDeBusca}`;
-  
-  // Buscar dados da API usando a função fetch
+
+  // Buscar dados da API
   fetch(url)
-    // Quando a resposta da requisição estiver disponível, converte a resposta para JSON
     .then((resposta) => resposta.json())
-    // Quando a conversão para JSON estiver completa, chama a função para exibir os resultados
     .then((resultado) => exibirResultados(resultado));
 }
 
@@ -29,3 +32,23 @@ function exibirResultados(resultado) {
   // Mostrar o container de resultados de artistas
   resultsArtist.classList.remove("hidden");
 }
+
+// Listener de evento para mudanças de input
+document.addEventListener("input", function () {
+  // Obter o termo de busca
+  const termoDeBusca = searchInput.value.toLowerCase();
+
+  // Verificar se o termo de busca está vazio
+  if (termoDeBusca === "") {
+    resultPlaylist.style.display = "flex";
+    resultsArtist.style.display = "none";
+    return;
+  }
+
+  // Esconder resultados da playlist e mostrar resultados de artistas
+  resultPlaylist.style.display = "none";
+  resultsArtist.style.display = "flex";
+
+  // Fazer a requisição da API com o termo de busca
+  requestApi(termoDeBusca);
+});
