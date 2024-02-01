@@ -6,7 +6,7 @@ const resultPlaylist = document.getElementById("cards-container");
 // Função para fazer a requisição da API
 function requestApi(termoDeBusca) {
   // URL do endpoint da API
-  const url = `https://api-spotify-eta.vercel.app/artists?name_like=${termoDeBusca}`;
+  const url = `https://spotify-api-tau-sage.vercel.app/artists?name_like=${termoDeBusca}`;
 
   // Buscar dados da API
   fetch(url)
