@@ -174,7 +174,7 @@ header {
     background-color: #121212;
     margin-top: 15px;
     border-radius: 8px;
-    height: 68%;
+    height: calc(100vh - 16.4rem);
     padding: 0 10px;
 }
 
